@@ -13,6 +13,11 @@ endif
 
 let g:loaded_fzf_dym = 1
 
+if !get(g:, "loaded_fzf")
+    echohl WarningMsg | echo "FZF is not loaded, please check your configuration" | echohl None
+    finish
+endif
+
 function! s:remove_swapfile(matched_files)
     silent! redir => swapfile
         silent swapname
