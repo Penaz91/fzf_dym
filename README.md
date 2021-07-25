@@ -15,6 +15,7 @@ Setup
 I personally use vim-plug, but this can probably be adapted to other systems
 
 ```
+" Remember to add FZF and FZF.vim before this plugin
 Plug 'penaz91/fzf_dym'
 ```
 
