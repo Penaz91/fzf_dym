@@ -14,7 +14,7 @@ endif
 let g:loaded_fzf_dym = 1
 
 if !get(g:, "loaded_fzf")
-    echohl WarningMsg | echo "FZF-DYM: FZF is not loaded, please check your configuration" | echohl None
+    echohl WarningMsg | echom "FZF-DYM: FZF is not loaded, please check your configuration" | echohl None
     finish
 endif
 
